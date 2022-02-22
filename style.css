@@ -1,0 +1,411 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: regular;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("PT Sans"),
+         url("/fonts/PTSans-Regular.ttf") format("ttf")
+        
+  }
+
+body {
+    font-family: PT Sans;
+
+    background-color: #000000;
+
+    width: 100%;
+}
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0F0F0F;
+}
+.header_buttons {
+    display: flex;
+}
+
+.logo {
+    height: 49px;
+}
+
+.logo_inner {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+ul {
+    display: flex;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+li {
+    list-style-type: none;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+
+    transition: 0.7s;
+}
+
+li:hover {
+    background-color: #1f1f1f;
+}
+
+.header_button {
+    color: #858585;
+    text-decoration: none;
+    
+    transition: 0.5s;
+}
+
+.header_button:hover {
+    color: #FFFFFF;
+}
+
+.main_picture {
+    width: 100%;
+    display: flex;
+
+    height: 90.5vh;
+    
+    
+}
+
+.logo_big {
+    display: flex;
+    position: absolute;
+
+    left: 50%;
+    margin-left: -160px;
+    top: 27%;
+}
+
+.main_text {
+    display: flex;
+    position: absolute;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    max-width: 730px;
+
+    top: 70%;
+    left: 50%;
+    margin-left: -375px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 1330px;
+    display: flex;
+
+    justify-content: space-around;
+
+    background-color: #000000;
+
+    flex-wrap: wrap;
+}
+
+.watches_holder_wrapper {
+    width: 1010px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    text-align: center;
+
+    /* position: relative;
+    left: 17%; */
+}
+
+.watch {
+    width: 260px;
+    height: 405px;
+
+    position: relative;
+}
+
+
+/* .buy_button:hover {
+    (watch_background {
+        border: solid 2px;
+        border-color: #ffffff
+    }
+} */
+
+.watch_img {
+    position: relative;
+
+    top: -70%;
+
+    transition: 0.7s;
+}
+
+.watch_img:hover {
+    padding: 10px 10px;
+    /* width: 100,5%; */
+
+    position: relative;
+
+    border-bottom: solid 2px;
+    border-color: #FFFFFF;
+
+    /* border: solid 1px;
+    border-color: #ff6961; */
+}
+
+.watch_name {
+    position: relative;
+
+    top: -55%;
+
+    text-align: left;
+
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #FFFFFF;
+}
+
+.watch_price {
+    position: relative;
+
+    top: -55%;
+
+    text-align: left;
+
+    text-transform: lowercase;
+
+    font-size: 16px;
+    font-weight: 200;
+    color: #FFFFFF;
+}
+
+.season {
+    display: flex;
+
+    width: 1010px;
+    height: 730px;
+
+    text-transform: uppercase;
+
+    font-size: 36px;
+    color: #FFFFFF;
+
+    position: relative;
+    left: 115px;
+}
+
+.season_text {
+    /* position: relative; */
+    text-align: center;
+
+    /* left: 50%; */
+    margin-left: 50px;
+    margin-left: -125px;
+
+    top: 10%;
+
+    font-weight: 900;
+}
+
+.season_underline {
+    position: relative;
+
+    top: -5%;
+}
+
+.new_collection {
+    display: flex;
+
+    width: 870px;
+    height: 730px;
+
+    text-transform: uppercase;
+
+    font-size: 36px;
+    font-weight: 900;
+    color: #FFFFFF;
+
+    text-align: center;
+}
+
+.new_collection_inner {
+    position: relative;
+    top: -40%;
+}
+
+.new_collection_underline {
+    position: relative;
+    top: -45%;
+
+    width: auto;
+}
+
+.catalog_button {
+    font-size: 18px;
+    font-weight: 400;
+
+    text-decoration: none;
+    position: relative;
+    top: -43%;
+
+    color: #FFFFFF;
+    opacity: 70%;
+
+    border: solid 2px;
+    border-color: #FFFFFF;
+
+    padding: 5px 15px;
+
+    transition: 0.7s;
+}
+
+.catalog_button:hover {
+    opacity: 100%;
+
+    border-color: #ff6961;
+}
+
+.clothes {
+    width: 870px;
+    height: 600px;
+} 
+
+.collection_year {
+    text-align: center;
+
+    margin-top: 75px;
+
+    width: 1010px;
+    height: 600px;
+
+    color: #FFFFFF;
+}
+
+.collection_year_topic {
+    font-size: 36px;
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    left: 40%;
+}
+
+.collection_year_underline {
+    
+    position: relative;
+}
+
+.collection_year_text {
+
+    position: relative;
+    text-align: center;
+
+    /* ! пофиксить MARGIN */
+    margin-left: 255px;
+    
+    width: 470px;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    top: 50%;
+
+    padding: 50px 0px;
+}
+
+
+
+.view_collection_button {
+    font-size: 18px;
+    font-weight: 400;
+
+    text-decoration: none;
+    position: relative;
+    /* ! пофиксить MARGIN */
+    margin-top: 50px;
+    top: 50%;
+
+    color: #FFFFFF;
+    opacity: 70%;
+
+    border: solid 2px;
+    border-color: #FFFFFF;
+
+    padding: 5px 15px;
+
+    transition: 0.7s;
+}
+
+.view_collection_button:hover {
+    opacity: 100%;
+
+    border-color: #ff6961;
+}
+
+.store_space {
+    width: 100%;
+    height: 1290px;
+
+}
+
+.store_text {
+    position: relative;
+    top: 8%;
+
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.store_underline {
+    position: relative;
+    text-align: center;
+    top: 8%;
+}
+
+.store_holder {
+    width: 65%;
+    height: 850px;
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    text-align: center;
+
+    position: relative;
+    left: 325px;
+    top: 15%;
+}
